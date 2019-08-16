@@ -1,0 +1,68 @@
+.cv__container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 20px;
+    text-align: center;
+    width: 100%;
+  }
+  .cv__section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+  
+    h1{
+      width: 100%;
+      font-size: 2rem;
+      font-family: $type-serif;
+      font-weight: normal;
+      letter-spacing: 3px;
+      margin-bottom: 0;
+      text-transform: uppercase;
+    }
+  }
+  
+  .cv__title{
+    width: 100%;
+    word-break: break-word;
+    font-size: 4.4rem;
+  }
+  .cv__item{
+    margin: 20px; //0 20px 20px 20px;
+    h2{
+      margin-top: 0;
+    }
+    ul{
+      padding: 0;
+      margin-bottom: 0;
+    }
+    li{
+      list-style: none;
+      margin-bottom: 5px;
+    }
+  }
+  
+  .cv__divider{
+    border: none;
+    border-bottom: 1px dotted black;
+    margin: 20px 0;
+    width: 80%;
+  }
+  
+  .cv__section.work, .cv__section.education, .cv__section.awards{
+    // align-self: flex-start;
+    // max-width: 30vw;
+    // min-width: 250px;
+    .cv__item{
+      ul{
+        margin-top: 0;
+      }
+      li{
+        margin-bottom: 20px;
+        li{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }

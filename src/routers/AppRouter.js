@@ -1,13 +1,14 @@
 import React from 'react';
 import {Switch, Route} from 'react-router-dom';
-import LandingPage from './landingpage';
-import AboutMe from './aboutme';
-import Blog from './blog';
-import Contact from './contact';
-import Projects from './projects';
-import Resume from './resume';
+import LandingPage from '../components/landingpage';
+import AboutMe from '../components/aboutme';
+import Blog from '../components/blog';
+import Contact from '../components/contact';
+import Projects from '../components/projects';
+import Resume from '../components/resume';
 
-const Main = () => (
+
+const AppRouter = () => (
     <Switch>
         <Route exact path="/"  component = {LandingPage} />
         <Route path="/aboutme"  component = {AboutMe} />
@@ -17,4 +18,4 @@ const Main = () => (
         <Route path="/resume"  component = {Resume} />
     </Switch>
 )
-export default Main;
+export default AppRouter;
